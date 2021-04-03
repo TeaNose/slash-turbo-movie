@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+
+import {Title} from '../../uikits';
 
 import styles from './styles';
 
@@ -7,12 +9,12 @@ const SplashPage = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.replace('OnboardingPage');
-    }, 1000);
+    }, 6000);
   }, []);
 
   return (
     <SafeAreaView style={styles.main}>
-      <Text>SplashPage</Text>
+      <Title />
     </SafeAreaView>
   );
 };

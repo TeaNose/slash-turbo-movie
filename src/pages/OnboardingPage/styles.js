@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 32,
     color: Color.BLACK,
+    fontWeight: 'bold',
+  },
+  welcomeContainer: {
+    marginVertical: 100,
   },
 });
 export default styles;

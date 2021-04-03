@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 
-import {TextInput, Button} from '../../uikits';
+import {TextInput, Button, Title} from '../../uikits';
 
 import styles from './styles';
 
@@ -15,6 +15,9 @@ const LoginPage = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.main}>
+      <View style={{alignItems: 'center', marginBottom: 100}}>
+        <Title />
+      </View>
       <TextInput
         value={username}
         onChangeText={text => setUsername(text)}
@@ -28,7 +31,7 @@ const LoginPage = ({navigation}) => {
         secureTextEntry
       />
       <View style={{marginHorizontal: 50, marginTop: 100}}>
-      <Button label="LOGIN" onPress={doLogin} />
+        <Button label="LOGIN" onPress={doLogin} />
       </View>
     </SafeAreaView>
   );
